@@ -1,0 +1,10 @@
+
+name: Build C++ code
+on: push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - run: g++ -std=c++23 src/*.cpp -o app
+      - run: ./app 
