@@ -10,7 +10,7 @@ int main() {
     string name = "dryfish09";
     // old way:
     cout << "my name is: " << name << endl; // too long, BRUH
-    // new way (if we don't need backward-compatibly)
+    // new way (if we don't need backward-compatibility)
     name = "stuff";
     println("also known as: {}", name);
     return 0;
