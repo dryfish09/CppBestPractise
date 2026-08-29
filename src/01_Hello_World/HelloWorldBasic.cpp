@@ -1,6 +1,8 @@
-// filename: HelloWorldBasic.cpp
-// license: Unlicense
-// purpose: educational only, not production ready.
+/*
+filename: HelloWorldBasic.cpp
+license: Unlicense
+purpose: educational only, not production ready.
+*/
 #include <iostream> // required, to print out the screen.
 using namespace std; // shorter way to call function from imported library (like this, iostream)
 // if you don't have this, you should write std::cout, std::cin.
