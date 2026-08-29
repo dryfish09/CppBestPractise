@@ -1,10 +1,22 @@
+name: Build C++23
 
-name: Build C++ code
-on: push
+on: [push]
+
 jobs:
   build:
     runs-on: ubuntu-latest
+    
     steps:
-      - uses: actions/checkout@v7
-      - run: g++ -std=c++23 src/*.cpp -o app
-      - run: ./app 
+    - uses: actions/checkout@v4
+    
+    - name: Install GCC 14
+      run: |
+        sudo apt update
+        sudo apt install -y g++-14
+        g++-14 --version
+    
+    - name: Build with GCC 14
+      run: |
+        cd src
+        g++-14 -std=c++23 *.cpp -o stuff -lstdc++exp
+        ./stuff
