@@ -1,13 +1,18 @@
-name: Build C++23
+name: Build All C++ Examples
 
-on: [push]
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
-  build:
+  build-all:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v4
+    - name: Checkout code
+      uses: actions/checkout@v7
     
     - name: Install GCC 14
       run: |
@@ -15,8 +20,74 @@ jobs:
         sudo apt install -y g++-14
         g++-14 --version
     
-    - name: Build with GCC 14
+    - name: Build all C++ files
       run: |
-        cd src
-        g++-14 -std=c++23 *.cpp -o stuff -lstdc++exp
-        ./stuff
+        mkdir -p build
+        
+        # Biến đếm
+        total=0
+        success=0
+        failed=0
+        
+        echo "📦 Starting build process..."
+        echo "───────────────────────────────────────"
+        
+        # Duyệt qua tất cả file .cpp
+        for file in src/*.cpp; do
+          if [ ! -f "$file" ]; then
+            continue
+          fi
+          
+          filename=$(basename "$file" .cpp)
+          ((total++))
+          
+          echo "🔨 [$total] Building: $filename"
+          
+          # Build với C++23 (fallback về C++20 nếu lỗi)
+          if g++-14 -std=c++23 "$file" -o "build/$filename" 2>&1; then
+            echo "✅ [$total] Success: $filename"
+            ((success++))
+          else
+            echo "⚠️ [$total] Retry with C++20: $filename"
+            if g++-14 -std=c++20 "$file" -o "build/$filename" 2>&1; then
+              echo "✅ [$total] Success with C++20: $filename"
+              ((success++))
+            else
+              echo "❌ [$total] Failed: $filename"
+              ((failed++))
+            fi
+          fi
+          
+          echo "───────────────────────────────────────"
+        done
+        
+        # Tóm tắt
+        echo ""
+        echo "📊 Build Summary:"
+        echo "   Total: $total"
+        echo "   ✅ Success: $success"
+        echo "   ❌ Failed: $failed"
+        
+        if [ $failed -gt 0 ]; then
+          exit 1
+        fi
+    
+    - name: Run all executables
+      run: |
+        echo "🚀 Running all executables..."
+        echo "───────────────────────────────────────"
+        
+        for exe in build/*; do
+          if [ -x "$exe" ]; then
+            echo "▶️ Running: $(basename "$exe")"
+            "$exe"
+            echo "───────────────────────────────────────"
+          fi
+        done
+    
+    - name: Upload build artifacts
+      uses: actions/upload-artifact@v6
+      with:
+        name: build-artifacts
+        path: build/
+        retention-days: 7
