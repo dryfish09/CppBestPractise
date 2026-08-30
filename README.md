@@ -1,4 +1,4 @@
-# C++ Best practise
+# C++ docs (handmade)
 ### What is it?
 This repository is a simple, hand-written C++ docs.
 ### Can you trust this?
