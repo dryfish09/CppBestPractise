@@ -18,4 +18,12 @@ int main() {
     std::cout << obfuscatedText << std::endl;
     return 0;
 }
-// you can learn more [o]in internet
+/*
+Escape syntax:
+- \t: tab
+- \n: new line (enter)
+- \b: backspace (delete a character before it)
+- \\: backslash
+- \': single qoute
+- \": double qoute
+*/
