@@ -31,9 +31,8 @@ std::string enumToString (Color c) {
     }
 }
 int main() {
-    Color myColor = Color::RED; // SHOULD use Color::RED
     // change color to string:
-    Color myColor = enumToString(Color::RED);
+    std::string myColor = enumToString(Color::RED);
     std::cout << "my color: " << myColor << std::endl;
     // type casting (to use status)
     Status HTTPS_STATUS = Status::OK;
