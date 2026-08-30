@@ -23,6 +23,7 @@ Escape syntax:
 - \t: tab
 - \n: new line (enter)
 - \b: backspace (delete a character before it)
+- \uXXXX: unicode escape (X is a number)
 - \\: backslash
 - \': single qoute
 - \": double qoute
