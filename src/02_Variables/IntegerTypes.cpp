@@ -17,7 +17,7 @@ int main() {
     long long myORCID = 9000483325843LL; // example only, lol, it needs LL suffix
     std::cout << "my ORCID: " << myORCID << std::endl;
     // use 'unsigned' keyword if your values needs unsigned
-    unsigned long unsignedStuff = 2323L;
+    unsigned long unsignedStuff = 2323UL;
     std::cout << unsignedStuff << std::endl;
     return 0;
 }
