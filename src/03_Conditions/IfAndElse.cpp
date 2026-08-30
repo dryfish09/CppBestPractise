@@ -19,7 +19,7 @@ int main() {
     int score = 40;
     bool isAlive = true; //  new variable: bool (boolean). Only true and false.
     if (score > 50 && isAlive) {
-        std::cout << "You win!" << std::endl; // only print out when score HIGHER or EQUAL 50 AND isAlive = true
+        std::cout << "You win!" << std::endl; // only print out when score HIGHER 50 AND isAlive = true
     }
     else if (score <= 50 && isAlive) {
         // only print when score < or = 50 and isAlive = true
