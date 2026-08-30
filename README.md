@@ -1,6 +1,6 @@
 # C++ Best practise
 ### What is it?
-This repository is a simple, hand-written C++ docs. I collected stuff that called **"best practise"** on internet.
+This repository is a simple, hand-written C++ docs.
 ### Can you trust this?
 All codes in here are **safe, verified by C++ senior**. You can trust it, but **it CAN'T replace official docs**.
 ### Contributing:
