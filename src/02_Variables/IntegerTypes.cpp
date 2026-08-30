@@ -14,7 +14,7 @@ int main() {
     long linesOfCode = 2323L; // needs L suffix after values
     std::cout << "this pull request has " << linesOfCode << " lines of code" << std::endl;
     // long long - to store VERY LONG number (like my ORCID id)
-    long long myORCID = 234567876987LL; // example only, lol, it needs LL suffix
+    long long myORCID = 0009000483325843LL; // example only, lol, it needs LL suffix
     std::cout << "my ORCID: " << myORCID << std::endl;
     // use 'unsigned' keyword if your values needs unsigned
     unsigned long unsignedStuff = 2323L;
