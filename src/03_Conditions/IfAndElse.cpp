@@ -16,4 +16,5 @@ int main() {
         // else - if all check failed, do this
         std::cout << "you younger than me" << std::endl;
     }
+    return 0;
 }
