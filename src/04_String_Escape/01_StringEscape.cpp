@@ -1,6 +1,6 @@
 /*
 filename: StringEscape.cpp
-license: unlicense
+license: The Unlicense
 */
 #include <iostream>
 #include <string>
