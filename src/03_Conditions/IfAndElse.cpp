@@ -38,6 +38,10 @@ Comparison Syntax:
 conditions (cond)
 - var1 == var2 (or values): equal
 - var1 != var2 (or values): not equal
+- var1 < var2: lower/smaller
+- var1 > var2: higher/bigger
+- var1 <= var2: smaller/lower or equal
+- var2 >= var2: bigger/higher or equal
 - cond1 && cond2: and
 - cond1 || cond2: or
 
