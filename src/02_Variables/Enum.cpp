@@ -21,7 +21,7 @@ std::string enumToString (Color c) {
         
     switch (c) {
         case Color::RED:
-        return "Red";
+        return "Red"; // no need to break when we have return
         case Color::BLUE:
         return "Blue";
         case Color::GREEN:
