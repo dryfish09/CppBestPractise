@@ -14,6 +14,8 @@ int main() {
             break; // exit loop, if you don't have, program will never ends.
         } else {
             std::cout << "Score is smaller than 999" << std::endl;
+            break;
+        }
     }
     return 0;
 }
