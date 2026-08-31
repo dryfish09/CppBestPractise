@@ -1,8 +1,8 @@
-# C++ docs (handmade)
+# C++ code example
 ### What is it?
-This repository is a simple, hand-written C++ docs.
+This repository is a simple, hand-written C++ code example.
 
-Each `.cpp` file is lesson, each line of code is an adventure, a story.
+Each `.cpp` file is lesson about basic C++.
 ### How to use?
 
 Each folder and `.cpp` file has its number, like `01_Hello_World/`, `01_HelloWorldBasic.cpp`.
@@ -16,7 +16,7 @@ Contributing are welcome! You can send me **pull request** or **open an issue** 
 - Requesting add/fix some examples.
 - Fix/add more example to make this repository more useful and help more people who new to C++.
 ### Requirement:
-- **Compiler**: GCC 14+ / Clang 18+ / MSVC 2026 (for file that contains `println`, `print` or `#include <print>`
+- **Compiler**: GCC 14+ / Clang 18+ / MSVC 2026 (for file that contains `println`, `print` or `#include <print>`), for normal use, GCC 12/13, MSVC 2024/2025, Clang 16/17 is enough.
 - **C++ Standard**: C++23 or later (some files use C++26)
 - **Build**: `g++ -std=c++23 filename.cpp -o output`
 
