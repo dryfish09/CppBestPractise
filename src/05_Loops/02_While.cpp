@@ -14,3 +14,9 @@ int main() {
     }
     return 0;
 }
+/*
+// while syntax:
+while (condition) {
+    // body here, don't just print
+    }
+*/
