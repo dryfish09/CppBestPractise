@@ -3,6 +3,11 @@
 This repository is a simple, hand-written C++ docs.
 
 Each `.cpp` file is lesson, each line of code is an adventure, a story.
+### How to use?
+
+Each folder and `.cpp` file has its number, like `01_Hello_World/`, `01_HelloWorldBasic.cpp`.
+You should read from `01` to the biggest number on its folder.
+
 ### Can you trust this?
 All codes in here are **safe, verified by C++ senior**. You can trust it, but **it CAN'T replace official docs**.
 ### Contributing:
