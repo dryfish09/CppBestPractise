@@ -1,6 +1,7 @@
 /*
 file name: TypeCasting.cpp
 license: The Unlicense
+NOTE: dynamic_cast will have with OOP.
 */
 #include <iostream>
 int main() {
