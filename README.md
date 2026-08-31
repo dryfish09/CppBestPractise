@@ -17,7 +17,7 @@ Contributing are welcome! You can send me **pull request** or **open an issue** 
 - Fix/add more example to make this repository more useful and help more people who new to C++.
 ### Requirement:
 - **Compiler**: GCC 14+ / Clang 18+ / MSVC 2026 (for file that contains `println`, `print` or `#include <print>`), for normal use, GCC 12/13, MSVC 2024/2025, Clang 16/17 is enough.
-- **C++ Standard**: C++23 or later (some files use C++26)
+- **C++ Standard**: C++17 or later (some files use C++23)
 - **Build**: `g++ -std=c++23 filename.cpp -o output`
 
 ### License:
