@@ -11,7 +11,7 @@ int main() {
     std::cout << ten << ": 3 = " << infiniteFloat << std::endl;
     // double -> int
     double pi = 3.14159;
-    int intergerPi = static_cast<int>(pi);
-    std::cout << "interger type of " << pi << "is " << intergerPi << std::endl;
+    int integerPi = static_cast<int>(pi);
+    std::cout << "integer type of " << pi << "is " << intergePi << std::endl;
     return 0;
 }
