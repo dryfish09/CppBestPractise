@@ -14,6 +14,8 @@ int main() {
     // array starts at 0, ends at max value declared - 1, like max value is 9, but index 8.
     // you can access to array by variables:
     int myNumber = smallNumber[8]; // 9
+    // u can change its value
+    int smallNumber[8] = 10;
     std::cout << "my number is " << myNumber << std::endl;
     std::cout << "big number: " << bigNumber[2] << std::endl;
     return 0;
