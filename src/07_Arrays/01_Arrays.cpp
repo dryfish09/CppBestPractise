@@ -14,6 +14,9 @@ int main() {
     int bigNumber[] = {100, 200, 400};
     // access to it:
     std::cout << "my score is: " << scores[0] << std::endl; // array starts at 0, ends at max value declared - 1, like max value is 9, but it's 8.
-    
-        
+    // you can access to array by variables:
+    int myNumber = smallNumber[8]; // 9
+    std::cout << "my number is " << myNumber << std::endl;
+    std::cout << "big number: " << bigNumber[2] << std::endl;
+    return 0;
 }
