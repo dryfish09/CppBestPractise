@@ -16,7 +16,7 @@ int main() {
     // long long - to store VERY LONG number (like my ORCID id)
     long long myORCID = 9000483325843LL; // example only, lol, it needs LL suffix
     std::cout << "my ORCID: " << myORCID << std::endl;
-    // use 'unsigned' keyword if your values needs unsigned
+    // use 'unsigned' keyword if your values needs unsigned (not recommended, if 'unsigned x = 0' and x--, x will very big)
     unsigned long unsignedStuff = 2323UL;
     std::cout << unsignedStuff << std::endl;
     return 0;
