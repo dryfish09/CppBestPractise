@@ -7,8 +7,9 @@ int main() {
         "Notebook"
     };
     // for but for array
-    for (std::string stuff : thingsOnMyBag) { 
-        std::cout << "There are things on my bag: " << stuff << std::endl;
+    std::cout << "There are things on my bag:" << std::endl;
+    for (std::string stuff : thingsOnMyBag) {
+        std::cout << "- " << stuff << std::endl;
     }
     return 0;
 }
