@@ -8,8 +8,8 @@ int main() {
     numbers.push_back(4);
     numbers.push_back(5);
     // remove item:
-    numbers.pop_back(5);
+    numbers.pop_back(); // remove last item
     // access to it (like arrays!)
-    std::cout << numbers[0] << endl;
+    std::cout << numbers[0] << std::endl;
     return 0;
 }
